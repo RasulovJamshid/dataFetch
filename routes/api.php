@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 // });
 Route::get('courses', 'CourseController@index');
 Route::post('courses', 'CourseController@store');
-Route::get('courses/{id}', 'CourseController@show');
+// Route::get('courses/{id}', 'CourseController@show');
 Route::get('search/{searchTerm}', 'CourseController@search');
 Route::get('search/{searchType}/{type}', 'CourseController@searchtype');
 

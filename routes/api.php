@@ -11,6 +11,11 @@ Route::post('courses', 'CourseController@store');
 Route::get('search/{searchTerm}', 'CourseController@search');
 Route::get('search/{searchType}/{type}', 'CourseController@searchtype');
 
+// Route::put('courses/{courses}', 'CoursesController@markAsCompleted');
+Route::post('properties', 'PropertyController@store');
+Route::get('properties', function(Request $request){
+    echo $request->url();
+});
 // Route::put('properties/{properties}', 'PropertiesController@markAsCompleted');
 /*
 |--------------------------------------------------------------------------

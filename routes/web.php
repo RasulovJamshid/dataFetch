@@ -11,7 +11,7 @@
 |
 */
 
-// Route::view('/{path?}', 'app');
+Route::view('/{path?}', 'web');
 Route::view('/{path?}', 'app')
      ->where('path', '.*')
      ->name('react');
